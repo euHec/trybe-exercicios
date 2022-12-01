@@ -48,3 +48,53 @@ console.log('atividade 1 - ponto 5');
 
 
 console.log(a);
+
+console.log('---------------------');
+console.log('atividade 1 - ponto 6');
+
+let cont = 0;
+
+for (let i = 0; i <= numbers.length; i+=1) {
+    if (numbers[i]% 2 !== 0){
+        cont += 1;
+    }
+}
+
+    if (cont > 0){
+        console.log(cont);
+    } else {
+        console.log('Nenhum valor ímpar encontrado');
+    }
+
+console.log('---------------------');
+console.log('atividade 1 - ponto 7');
+
+let c = numbers[0];
+
+for (let x = 1; x < numbers.length; x+=1) {    
+    
+    if (c > numbers[x]) {
+        c = numbers[x]
+    }
+}
+
+console.log(c);
+
+console.log('---------------------');
+console.log('atividade 1 - ponto 8');
+
+let d = [];
+
+for (let index = 1; index <= 25 ; index+= 1) {
+    d.push(index);
+}
+
+console.log(d);
+
+console.log('---------------------');
+console.log('atividade 1 - ponto 9');
+
+for (let index = 0; index < d.length; index+= 1) {
+    let result = d[index]/2;
+    console.log('O resultado é: ' + result);    
+}
