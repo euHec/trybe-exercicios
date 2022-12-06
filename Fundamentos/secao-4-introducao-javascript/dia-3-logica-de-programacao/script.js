@@ -63,16 +63,47 @@
 // }
         //não consegui realizar a resolução
 
-console.log('-----------------');
-console.log('Exercicio bônus 1');
-
-console.log('-----------------');
-console.log('Exercicio bônus 2');
+// console.log('-----------------');
+// console.log('Exercicio bônus 1');
 
 const n = 5;
-let print = '';
+// let caractere = '*';
+// let print = '';
 
-    for (let x = 0; x < n; x+=1) {
-        print += '*';
-        console.log(print);
+//     for (let b = 0; b < n; b+=1) {
+//         print = print + caractere;
+//     }
+
+//     for (let c = 0; c < n; c+=1) {
+//         console.log(print);
+//     }
+
+// console.log('-----------------');
+// console.log('Exercicio bônus 2');
+
+// let printf = '';
+
+//     for (let x = 0; x < n; x+=1) {
+//         printf += '*';
+//         console.log(printf);
+//     }
+
+console.log('-----------------');
+console.log('Exercicio bônus 3');
+
+let println = '';
+let verificacao = n;
+
+    for (let linha = 0; linha < n; linha += 1) {
+        for(let coluna = 0; coluna <= n; coluna += 1){
+            if (coluna < verificacao) {
+                println = println + ' ';
+            } else {
+                println = println + '*';
+            }
+        }
+    
+        console.log(println);
+        verificacao -= 1;
+        println = '';
     }
